@@ -19,9 +19,9 @@ class SecondContTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-     
+    
         
-        return "не успел разобраться"
+        return "\(human?[section].name ?? "")" + " " + "\(human?[section].surname ?? "")"
        
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,7 +31,7 @@ class SecondContTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-       return human?[section].name.count ?? 0
+        return 2
         
     }
 
@@ -41,7 +41,7 @@ class SecondContTableViewController: UITableViewController {
         let person = human?[indexPath.section]
     
         var content = cell.defaultContentConfiguration()
-        content.text = person?.surname
+        content.text = person?.email
         cell.contentConfiguration = content
 
         return cell
