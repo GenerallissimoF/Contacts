@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Contacts-->
         <scene sceneID="crf-pW-YGF">
             <objects>
-                <tableViewController id="GhA-UE-bvc" customClass="ContTableViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="contVC" id="GhA-UE-bvc" customClass="ContTableViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ANb-ye-HpJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                             <outlet property="delegate" destination="GhA-UE-bvc" id="TBI-Kr-Z8U"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="z2h-Od-T5E"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" id="z2h-Od-T5E"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w50-eM-Jb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +61,7 @@
         <!--Contacts-->
         <scene sceneID="otB-DN-QaZ">
             <objects>
-                <tabBarController title="Contacts" automaticallyAdjustsScrollViewInsets="NO" id="w8v-NK-uge" sceneMemberID="viewController">
+                <tabBarController title="Contacts" automaticallyAdjustsScrollViewInsets="NO" id="w8v-NK-uge" customClass="TabBarViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Person List" largeTitleDisplayMode="always" id="Qop-hB-V5Y"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7yQ-GI-XmM">
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
         </scene>
-        <!--Item-->
+        <!--Contacts-->
         <scene sceneID="Zhd-uJ-HNF">
             <objects>
-                <tableViewController id="TWm-DH-nW9" customClass="SecondContTableViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="secVC" id="TWm-DH-nW9" customClass="SecondContTableViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="SWO-gd-Rba">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,8 @@
                             <outlet property="delegate" destination="TWm-DH-nW9" id="ct2-iQ-h9A"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="q5C-ct-DwS"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" id="q5C-ct-DwS"/>
+                    <navigationItem key="navigationItem" id="NmQ-S2-a0I"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DR9-h6-iMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

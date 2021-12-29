@@ -12,12 +12,22 @@ struct Person {
     let email: String
     let phone: String
     
-  static func getPersons() -> [Person] {
-    var people = [Person]()
-      for i in 0...DataManager.shared.names.count - 1 {
-
-        people.append(Person(name: DataManager.shared.names[Int.random(in: 0...DataManager.shared.names.count - 1)], surname: DataManager.shared.surnames[Int.random(in: 0...DataManager.shared.surnames.count - 1)], email: DataManager.shared.emails[Int.random(in: 0...DataManager.shared.emails.count - 1)], phone: DataManager.shared.phones[Int.random(in: 0...DataManager.shared.phones.count - 1)]))
-    }
-  return people
+    
+    static func getPersons() -> [Person] {
+        
+        var people = [Person]()
+        let shuffledNames = DataManager.shared.names.shuffled()
+        let shuffledSurnames = DataManager.shared.surnames.shuffled()
+        let shuffledEmails = DataManager.shared.emails.shuffled()
+        let shuffledPhone = DataManager.shared.phones.shuffled()
+        for i in 0...DataManager.shared.names.count - 1 {
+            let person = Person(name: shuffledNames[i],
+                                surname: shuffledSurnames[i],
+                                email: shuffledEmails[i],
+                                phone: shuffledPhone[i])
+            people.append(person)
+        }
+        
+        return people
     }
 }
