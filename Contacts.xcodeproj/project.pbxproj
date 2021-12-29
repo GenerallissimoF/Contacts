@@ -16,6 +16,7 @@
 		1D5B6FCA277B777100C33E52 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B6FC9277B777100C33E52 /* DataManager.swift */; };
 		1D5B6FCC277B77B700C33E52 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B6FCB277B77B700C33E52 /* ContactsModel.swift */; };
 		1D5B6FCE277B881E00C33E52 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B6FCD277B881E00C33E52 /* ContactDetailViewController.swift */; };
+		1D5B6FD0277B9D9E00C33E52 /* SecondContTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B6FCF277B9D9E00C33E52 /* SecondContTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1D5B6FC9277B777100C33E52 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1D5B6FCB277B77B700C33E52 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		1D5B6FCD277B881E00C33E52 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		1D5B6FCF277B9D9E00C33E52 /* SecondContTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,9 @@
 				1D5B6FB3277B751800C33E52 /* AppDelegate.swift */,
 				1D5B6FB5277B751800C33E52 /* SceneDelegate.swift */,
 				1D5B6FB9277B751800C33E52 /* Main.storyboard */,
-				1D5B6FCD277B881E00C33E52 /* ContactDetailViewController.swift */,
+				1D5B6FCF277B9D9E00C33E52 /* SecondContTableViewController.swift */,
 				1D5B6FC7277B760F00C33E52 /* ContTableViewController.swift */,
+				1D5B6FCD277B881E00C33E52 /* ContactDetailViewController.swift */,
 				1D5B6FC9277B777100C33E52 /* DataManager.swift */,
 				1D5B6FCB277B77B700C33E52 /* ContactsModel.swift */,
 				1D5B6FBC277B751800C33E52 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 				1D5B6FB4277B751800C33E52 /* AppDelegate.swift in Sources */,
 				1D5B6FCA277B777100C33E52 /* DataManager.swift in Sources */,
 				1D5B6FB6277B751800C33E52 /* SceneDelegate.swift in Sources */,
+				1D5B6FD0277B9D9E00C33E52 /* SecondContTableViewController.swift in Sources */,
 				1D5B6FCE277B881E00C33E52 /* ContactDetailViewController.swift in Sources */,
 				1D5B6FC8277B760F00C33E52 /* ContTableViewController.swift in Sources */,
 			);

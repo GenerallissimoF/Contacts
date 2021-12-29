@@ -1,5 +1,5 @@
 //
-//  ContTableViewController.swift
+//  SecondContTableViewController.swift
 //  Contacts
 //
 //  Created by Ivan Adoniev on 28.12.2021.
@@ -7,55 +7,39 @@
 
 import UIKit
 
-class ContTableViewController: UITableViewController {
-    let man = Person.getPersons()
-
+class SecondContTableViewController: UITableViewController {
+    
+    var human: [Person]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 4
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-       
-        return man.count
+        return 2
     }
 
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let person = man[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath)
+        let person = human![indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = "\(person.name + " " + person.surname)"
+        
         cell.contentConfiguration = content
+
         return cell
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let contactDetailVC = segue.destination as? ContactDetailViewController {
-            guard let indexPath = tableView.indexPathForSelectedRow else {return}
-            let contact = man[indexPath.row]
-            contactDetailVC.detail = contact
-        } else {
-            let tabBarController = segue.destination as! UITabBarController
-            if let viewControllers = tabBarController.viewControllers {
-                for viewController in viewControllers {
-                    let secondVC = viewController as? SecondContTableViewController
-                    guard let indexPath = tableView.indexPathForSelectedRow else {return}
-                    let contactt = man
-                    secondVC!.human = contactt
-                }
-            }
-        }
-    }
-}
-                    /*
+
+
+    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
@@ -100,5 +84,4 @@ class ContTableViewController: UITableViewController {
     }
     */
 
-
-        
+}
